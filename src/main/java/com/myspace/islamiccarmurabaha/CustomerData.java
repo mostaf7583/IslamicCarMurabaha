@@ -6,12 +6,127 @@ package com.myspace.islamiccarmurabaha;
 
 public class CustomerData implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CustomerData() {
-    }
+	@org.kie.api.definition.type.Label(value = "name")
+	private java.lang.String name;
+	@org.kie.api.definition.type.Label(value = "Id")
+	private java.lang.String id;
+	@org.kie.api.definition.type.Label(value = "Address")
+	private java.lang.String address;
+	@org.kie.api.definition.type.Label(value = "Company")
+	private java.lang.String company;
+	@org.kie.api.definition.type.Label(value = "Totalincome")
+	private java.lang.Double totalincome;
+	@org.kie.api.definition.type.Label(value = "Carprice")
+	private java.lang.Double carprice;
+	@org.kie.api.definition.type.Label(value = "Cartype")
+	private java.lang.String cartype;
+	@org.kie.api.definition.type.Label(value = "Statment Number")
+	private java.lang.Integer statmentNumber;
+	@org.kie.api.definition.type.Label(value = "Invoice Number")
+	private java.lang.Integer invoiceNumber;
+	@org.kie.api.definition.type.Label(value = "action")
+	private java.lang.String action;
 
+	public CustomerData() {
+	}
 
+	public java.lang.String getName() {
+		return this.name;
+	}
 
+	public void setName(java.lang.String name) {
+		this.name = name;
+	}
+
+	public java.lang.String getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.String id) {
+		this.id = id;
+	}
+
+	public java.lang.String getAddress() {
+		return this.address;
+	}
+
+	public void setAddress(java.lang.String address) {
+		this.address = address;
+	}
+
+	public java.lang.String getCompany() {
+		return this.company;
+	}
+
+	public void setCompany(java.lang.String company) {
+		this.company = company;
+	}
+
+	public java.lang.Double getTotalincome() {
+		return this.totalincome;
+	}
+
+	public void setTotalincome(java.lang.Double totalincome) {
+		this.totalincome = totalincome;
+	}
+
+	public java.lang.Double getCarprice() {
+		return this.carprice;
+	}
+
+	public void setCarprice(java.lang.Double carprice) {
+		this.carprice = carprice;
+	}
+
+	public java.lang.String getCartype() {
+		return this.cartype;
+	}
+
+	public void setCartype(java.lang.String cartype) {
+		this.cartype = cartype;
+	}
+
+	public java.lang.Integer getStatmentNumber() {
+		return this.statmentNumber;
+	}
+
+	public void setStatmentNumber(java.lang.Integer statmentNumber) {
+		this.statmentNumber = statmentNumber;
+	}
+
+	public java.lang.Integer getInvoiceNumber() {
+		return this.invoiceNumber;
+	}
+
+	public void setInvoiceNumber(java.lang.Integer invoiceNumber) {
+		this.invoiceNumber = invoiceNumber;
+	}
+
+	public java.lang.String getAction() {
+		return this.action;
+	}
+
+	public void setAction(java.lang.String action) {
+		this.action = action;
+	}
+
+	public CustomerData(java.lang.String name, java.lang.String id,
+			java.lang.String address, java.lang.String company,
+			java.lang.Double totalincome, java.lang.Double carprice,
+			java.lang.String cartype, java.lang.Integer statmentNumber,
+			java.lang.Integer invoiceNumber, java.lang.String action) {
+		this.name = name;
+		this.id = id;
+		this.address = address;
+		this.company = company;
+		this.totalincome = totalincome;
+		this.carprice = carprice;
+		this.cartype = cartype;
+		this.statmentNumber = statmentNumber;
+		this.invoiceNumber = invoiceNumber;
+		this.action = action;
+	}
 
 }
