@@ -23,9 +23,6 @@ public class PR implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("Assignment")
 	private java.lang.String assignment;
 
-	@org.kie.api.definition.type.Label(value = "action")
-	private java.lang.String action;
-
 	public PR() {
 	}
 
@@ -85,18 +82,10 @@ public class PR implements java.io.Serializable {
 		this.assignment = assignment;
 	}
 
-	public java.lang.String getAction() {
-		return this.action;
-	}
-
-	public void setAction(java.lang.String action) {
-		this.action = action;
-	}
-
 	public PR(java.lang.Double carPrice, java.lang.Integer invoiceNumber,
 			java.lang.String carType, java.lang.Integer chassisNumber,
 			java.lang.String carColor, java.lang.Double engineCapacity,
-			java.lang.String assignment, java.lang.String action) {
+			java.lang.String assignment) {
 		this.carPrice = carPrice;
 		this.invoiceNumber = invoiceNumber;
 		this.carType = carType;
@@ -104,7 +93,6 @@ public class PR implements java.io.Serializable {
 		this.carColor = carColor;
 		this.engineCapacity = engineCapacity;
 		this.assignment = assignment;
-		this.action = action;
 	}
 
 }
