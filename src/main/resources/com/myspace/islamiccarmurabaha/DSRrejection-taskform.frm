@@ -1,1 +1,0 @@
-{"id":"9b025c4a-ca16-47a3-bb17-a8c936cd18c9","name":"DSRrejection-taskform.frm","model":{"taskName":"DSRrejection","processId":"IslamicCarMurabaha.IslamicCarMurabaha","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
