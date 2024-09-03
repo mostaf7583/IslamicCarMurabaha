@@ -8,20 +8,23 @@ public class PR implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "Car price")
+	@org.kie.api.definition.type.Label("Car price")
 	private java.lang.Double carPrice;
-	@org.kie.api.definition.type.Label(value = "Invoice number")
+	@org.kie.api.definition.type.Label("Invoice number")
 	private java.lang.Integer invoiceNumber;
-	@org.kie.api.definition.type.Label(value = "Car type")
+	@org.kie.api.definition.type.Label("Car type")
 	private java.lang.String carType;
-	@org.kie.api.definition.type.Label(value = "Chassis number")
+	@org.kie.api.definition.type.Label("Chassis number")
 	private java.lang.Integer chassisNumber;
-	@org.kie.api.definition.type.Label(value = "Car color")
+	@org.kie.api.definition.type.Label("Car color")
 	private java.lang.String carColor;
-	@org.kie.api.definition.type.Label(value = "Engine capacity")
+	@org.kie.api.definition.type.Label("Engine capacity")
 	private java.lang.Double engineCapacity;
-	@org.kie.api.definition.type.Label(value = "Assignment")
+	@org.kie.api.definition.type.Label("Assignment")
 	private java.lang.String assignment;
+
+	@org.kie.api.definition.type.Label(value = "action")
+	private java.lang.String action;
 
 	public PR() {
 	}
@@ -82,10 +85,18 @@ public class PR implements java.io.Serializable {
 		this.assignment = assignment;
 	}
 
+	public java.lang.String getAction() {
+		return this.action;
+	}
+
+	public void setAction(java.lang.String action) {
+		this.action = action;
+	}
+
 	public PR(java.lang.Double carPrice, java.lang.Integer invoiceNumber,
 			java.lang.String carType, java.lang.Integer chassisNumber,
 			java.lang.String carColor, java.lang.Double engineCapacity,
-			java.lang.String assignment) {
+			java.lang.String assignment, java.lang.String action) {
 		this.carPrice = carPrice;
 		this.invoiceNumber = invoiceNumber;
 		this.carType = carType;
@@ -93,6 +104,7 @@ public class PR implements java.io.Serializable {
 		this.carColor = carColor;
 		this.engineCapacity = engineCapacity;
 		this.assignment = assignment;
+		this.action = action;
 	}
 
 }
