@@ -6,12 +6,93 @@ package com.myspace.islamiccarmurabaha;
 
 public class PR implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public PR() {
-    }
+	@org.kie.api.definition.type.Label(value = "Car price")
+	private java.lang.Double carPrice;
+	@org.kie.api.definition.type.Label(value = "Invoice number")
+	private java.lang.Integer invoiceNumber;
+	@org.kie.api.definition.type.Label(value = "Car type")
+	private java.lang.String carType;
+	@org.kie.api.definition.type.Label(value = "Chassis number")
+	private java.lang.Integer chassisNumber;
+	@org.kie.api.definition.type.Label(value = "Car color")
+	private java.lang.String carColor;
+	@org.kie.api.definition.type.Label(value = "Engine capacity")
+	private java.lang.Double engineCapacity;
+	@org.kie.api.definition.type.Label(value = "Assignment")
+	private java.lang.String assignment;
 
+	public PR() {
+	}
 
+	public java.lang.Double getCarPrice() {
+		return this.carPrice;
+	}
 
+	public void setCarPrice(java.lang.Double carPrice) {
+		this.carPrice = carPrice;
+	}
+
+	public java.lang.Integer getInvoiceNumber() {
+		return this.invoiceNumber;
+	}
+
+	public void setInvoiceNumber(java.lang.Integer invoiceNumber) {
+		this.invoiceNumber = invoiceNumber;
+	}
+
+	public java.lang.String getCarType() {
+		return this.carType;
+	}
+
+	public void setCarType(java.lang.String carType) {
+		this.carType = carType;
+	}
+
+	public java.lang.Integer getChassisNumber() {
+		return this.chassisNumber;
+	}
+
+	public void setChassisNumber(java.lang.Integer chassisNumber) {
+		this.chassisNumber = chassisNumber;
+	}
+
+	public java.lang.String getCarColor() {
+		return this.carColor;
+	}
+
+	public void setCarColor(java.lang.String carColor) {
+		this.carColor = carColor;
+	}
+
+	public java.lang.Double getEngineCapacity() {
+		return this.engineCapacity;
+	}
+
+	public void setEngineCapacity(java.lang.Double engineCapacity) {
+		this.engineCapacity = engineCapacity;
+	}
+
+	public java.lang.String getAssignment() {
+		return this.assignment;
+	}
+
+	public void setAssignment(java.lang.String assignment) {
+		this.assignment = assignment;
+	}
+
+	public PR(java.lang.Double carPrice, java.lang.Integer invoiceNumber,
+			java.lang.String carType, java.lang.Integer chassisNumber,
+			java.lang.String carColor, java.lang.Double engineCapacity,
+			java.lang.String assignment) {
+		this.carPrice = carPrice;
+		this.invoiceNumber = invoiceNumber;
+		this.carType = carType;
+		this.chassisNumber = chassisNumber;
+		this.carColor = carColor;
+		this.engineCapacity = engineCapacity;
+		this.assignment = assignment;
+	}
 
 }
