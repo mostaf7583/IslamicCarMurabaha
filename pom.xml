@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>IslamicCarMurabaha</artifactId>
-  <version>1.0.0-SNAPSHOT</version>
+  <version>2.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
   <name>IslamicCarMurabaha</name>
   <description></description>
@@ -48,7 +48,7 @@
     <dependency>
       <groupId>org.jbpm.contrib</groupId>
       <artifactId>pdf-workitem</artifactId>
-      <version>7.73.0.Final</version>
+      <version>7.61.0.Final</version>
     </dependency>
   </dependencies>
   <build>

@@ -8,26 +8,38 @@ public class CustomerData implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "name")
+	@org.kie.api.definition.type.Label("name")
 	private java.lang.String name;
-	@org.kie.api.definition.type.Label(value = "Id")
+	@org.kie.api.definition.type.Label("Id")
 	private java.lang.String id;
-	@org.kie.api.definition.type.Label(value = "Address")
+	@org.kie.api.definition.type.Label("Address")
 	private java.lang.String address;
-	@org.kie.api.definition.type.Label(value = "Company")
+	@org.kie.api.definition.type.Label("Company")
 	private java.lang.String company;
-	@org.kie.api.definition.type.Label(value = "Totalincome")
+	@org.kie.api.definition.type.Label("Totalincome")
 	private java.lang.Double totalincome;
-	@org.kie.api.definition.type.Label(value = "Carprice")
+	@org.kie.api.definition.type.Label("Carprice")
 	private java.lang.Double carprice;
-	@org.kie.api.definition.type.Label(value = "Cartype")
+	@org.kie.api.definition.type.Label("Cartype")
 	private java.lang.String cartype;
-	@org.kie.api.definition.type.Label(value = "Statment Number")
+	@org.kie.api.definition.type.Label("Statment Number")
 	private java.lang.Integer statmentNumber;
-	@org.kie.api.definition.type.Label(value = "Invoice Number")
+	@org.kie.api.definition.type.Label("Invoice Number")
 	private java.lang.Integer invoiceNumber;
-	@org.kie.api.definition.type.Label(value = "action")
+	@org.kie.api.definition.type.Label("action")
 	private java.lang.String action;
+
+	@org.kie.api.definition.type.Label(value = "Chassis number ")
+	private java.lang.Integer chassisNumber;
+
+	@org.kie.api.definition.type.Label(value = "Car color")
+	private java.lang.String carColor;
+
+	@org.kie.api.definition.type.Label(value = "StatementNumber")
+	private java.lang.Integer statementNumber;
+
+	@org.kie.api.definition.type.Label(value = "Engine Cpacity")
+	private java.lang.String engineCpacity;
 
 	public CustomerData() {
 	}
@@ -112,11 +124,45 @@ public class CustomerData implements java.io.Serializable {
 		this.action = action;
 	}
 
+	public java.lang.Integer getChassisNumber() {
+		return this.chassisNumber;
+	}
+
+	public void setChassisNumber(java.lang.Integer chassisNumber) {
+		this.chassisNumber = chassisNumber;
+	}
+
+	public java.lang.String getCarColor() {
+		return this.carColor;
+	}
+
+	public void setCarColor(java.lang.String carColor) {
+		this.carColor = carColor;
+	}
+
+	public java.lang.Integer getStatementNumber() {
+		return this.statementNumber;
+	}
+
+	public void setStatementNumber(java.lang.Integer statementNumber) {
+		this.statementNumber = statementNumber;
+	}
+
+	public java.lang.String getEngineCpacity() {
+		return this.engineCpacity;
+	}
+
+	public void setEngineCpacity(java.lang.String engineCpacity) {
+		this.engineCpacity = engineCpacity;
+	}
+
 	public CustomerData(java.lang.String name, java.lang.String id,
 			java.lang.String address, java.lang.String company,
 			java.lang.Double totalincome, java.lang.Double carprice,
 			java.lang.String cartype, java.lang.Integer statmentNumber,
-			java.lang.Integer invoiceNumber, java.lang.String action) {
+			java.lang.Integer invoiceNumber, java.lang.String action,
+			java.lang.Integer chassisNumber, java.lang.String carColor,
+			java.lang.Integer statementNumber, java.lang.String engineCpacity) {
 		this.name = name;
 		this.id = id;
 		this.address = address;
@@ -127,6 +173,10 @@ public class CustomerData implements java.io.Serializable {
 		this.statmentNumber = statmentNumber;
 		this.invoiceNumber = invoiceNumber;
 		this.action = action;
+		this.chassisNumber = chassisNumber;
+		this.carColor = carColor;
+		this.statementNumber = statementNumber;
+		this.engineCpacity = engineCpacity;
 	}
 
 }
